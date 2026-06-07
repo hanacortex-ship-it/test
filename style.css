@@ -1,0 +1,1030 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+:root{
+    --mainColor:#222831;
+    --secondColor:#cccccc;
+    --hoverColor:#1b1f24;
+    --blackColor:black;
+    --whiteColor:white;
+    --buttonsColor:#ffbe33;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ---NavBar--- */
+
+nav{
+    padding: 2px 20px !important;
+    background-color: var(--hoverColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav #link{
+    font-size: 12px;
+    color: var(--whiteColor);
+    transition: all 0.3s;
+    display: inline-block; 
+}
+nav #link:hover{
+    color: var(--buttonsColor);
+    scale: 1.02;
+}
+nav #logo{
+    font-size: 20px;
+    color:var(--whiteColor);
+    font-weight: bold;
+    transition: all .3s;
+    font-family:'Dancing Script', cursive;
+    cursor: pointer;
+    display: inline-block;
+}
+nav #logo:hover{
+    color: var(--buttonsColor);
+    scale: 1.03;
+}
+nav #navbarNav .icons #icon{
+    font-size: 13px;
+    padding: 10px 5px;
+    color: var(--whiteColor);
+    transition: all .3s;
+    display: inline-block;  
+}
+nav #navbarNav .icons #icon:hover{
+    color: var(--buttonsColor);   
+}
+nav #navbarNav button{
+    background-color: var(--buttonsColor);
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    width: 90px;
+    height: 25px;
+    border-radius: 25px;
+    margin: 5px 0 0 8px;
+    transition: all 0.3s;
+}
+/* ---NavBAr Responsive--- */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 5px 0;
+    }
+    nav #navbarNav {
+        width: 90%;
+    }
+    nav #navbarNav a,
+    nav #link {
+        padding: 0;
+    }
+    nav .icons {
+        margin-top: 5px;
+    }
+}
+
+/* ---Header--- */
+
+.head{
+    height: 100vh;
+    width: 100%;    
+    background-image: url(./hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+    overflow: hidden;
+    position: relative;
+}
+#headerSlider {
+    width: 100%;
+    max-width: 400px; 
+}
+#headerSlider .carousel-item {
+    display: none;
+}
+#headerSlider .carousel-item.active {
+    display: block;
+}
+#headerSlider .carousel-inner {
+    width: 100%;
+}
+.slide {
+    color: white;
+}
+.slide h1{
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.slide p{
+    font-size: 10px;
+    margin-bottom: 15px;
+    word-spacing: 2px;
+    line-height: 1.6;
+
+}
+.slide button{
+    font-size: 13px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    background: var(--buttonsColor);
+    color: var(--whiteColor);
+    cursor: pointer;
+}
+
+/* ---Head Responsive--- */
+@media screen and (max-width: 790px) {
+    .head{
+    padding: 0 25px;
+}
+#headerSlider {
+    max-width: 280px; 
+}
+
+.slide h1{
+    font-size: 23px;
+    line-height: 1.1;
+}
+.slide p{
+    font-size: 10px;
+    margin-bottom: 15px;
+    word-spacing: 2px;
+    line-height: 1.4;
+}
+.slide button{
+    font-size: 11px;
+    padding: 5px 10px;
+}
+}
+@media (max-width: 480px) {
+        .head{
+    padding: 0 25px;
+}
+#headerSlider {
+    max-width: 250px; 
+}
+
+.slide h1{
+    font-size: 19px;
+    line-height: 1.1;
+}
+.slide p{
+    font-size: 10px;
+    margin-bottom: 15px;
+    word-spacing: 2px;
+    line-height: 1.4;
+}
+.slide button{
+    font-size: 11px;
+    padding: 5px 10px;
+}
+}
+
+/* ---offers--- */
+
+.offers{
+    width: 100%;
+    padding: 50px 10% 0 10%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: nowrap;
+}
+
+.offers .card{
+    width: 380px;
+    height: 170px;
+    background-color: var(--hoverColor);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    transition: all 2s;
+    animation: colors 4s infinite;
+    animation-play-state: paused;
+
+
+}
+.offers .card:hover{
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes colors {
+    0% {
+        background-color: var(--mainColor);
+    }
+    25% {
+        background-color: #373A40;
+    }
+    50% {
+        background-color: #686D76;
+    }
+    75% {
+        background-color: #44444E;
+    }
+    100% {
+        background-color: var(--mainColor);
+    }
+}
+
+.offers .card .img1{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px var(--buttonsColor) solid;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-image: url(./o1.jpg);
+    background-size: contain;
+animation: fadeSlide 5s infinite;
+}
+
+@keyframes fadeSlide {
+  from {
+    transform: translateX(30px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.offers .card .img2{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px var(--buttonsColor) solid;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-image: url(./o2.jpg);
+    background-size: contain;
+    animation: fadeSlide 5s infinite;
+
+}
+
+.offers .text{
+    margin-left: 160px;
+    margin-top: 10px;
+    transition: all 1s ;
+}
+.offers .text:hover{
+    scale: 1.03;
+}
+.offers .text h3{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.offers .text h2{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.offers .text span{
+    font-size: 13px;
+}
+
+.offers .text button{
+    border: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color:var(--buttonsColor);
+    color: var(--blackColor);
+}
+
+/* ---Offers Responsive--- */
+@media screen and (max-width:900px) {
+    
+.offers{
+    gap: 20px;
+    flex-wrap:wrap;
+}   
+}
+@media screen and (max-width:380px) {
+    
+.offers{
+    gap: 10px;
+    flex-wrap:wrap;
+}   
+.offers .text h3{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.offers .text h2{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 9px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.offers .text span{
+    font-size: 13px;
+}
+
+.offers .text button{
+    border: none;
+    font-size: 10px;
+    padding: 5px 7px;
+
+}
+.offers .card .img1{
+    width: 120px;
+    height: 120px;
+    top: 20px;
+
+}
+.offers .card .img2{
+    width: 120px;
+    height: 120px;
+    top: 20px;
+}
+.offers .text{
+    margin-left: 140px;
+}
+}
+
+
+/* Menu */
+.menu{
+    width: 100%;
+    padding: 9% 10% !important;
+}
+.menu h5{
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-bottom: 25px;
+        margin-top: 10px;
+
+}
+
+.menu .menu-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:center;
+    gap:30px;
+}
+.menu .menu-cards .menu-card{
+    background-color: var(--hoverColor);
+    width: 270px;
+    border-radius: 10px ;
+    color: var(--whiteColor);
+    border: none;
+    position: relative;
+    transition: all 2s;
+
+    }
+    .menu .menu-cards .menu-card:hover{
+    box-shadow: 3px 3px 10px gray, -3px -3px 10px gray;
+        transform: translateY(-8px) scale(1.01);
+
+    }
+
+.menu .menu-cards .menu-card .img1{
+    background-image: url(./f1.png);
+    background-position: center;
+    background-size:180px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+.menu .menu-cards .menu-card .img2{
+    background-image: url(./f2.png);
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+.menu .menu-cards .menu-card .img3{
+    background-image: url(./f3.png);
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+.menu .menu-cards .menu-card .img4{
+    background-image: url(./f4.png);
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+.menu .menu-cards .menu-card .img5{
+    background-image: url(./f5.png);
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+.menu .menu-cards .menu-card .img6{
+    background-image: url(./f6.png);
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+.menu .menu-cards .menu-card .img7{
+    background-image: url(./f7.png);
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+.menu .menu-cards .menu-card .img8{
+    background-image: url(./f8.png);
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+.menu .menu-cards .menu-card .img9{
+    background-image: url(./f9.png);
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-color:var(--secondColor);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 30px ;
+}
+
+.menu .menu-cards .menu-card .text{
+    font-size: 10px;
+    margin: 20px;
+    padding: 10px;
+
+}
+.menu .menu-cards .menu-card .icon #icon{
+    width: 30px;
+    height: 30px; 
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: var(--buttonsColor);
+    color: var(--whiteColor);
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+
+}
+.menu .menu-cards .menu-card .icon #icon:hover{
+    scale: 1.1;
+}
+
+
+/* ---Menu Responsive--- */
+
+@media screen and (max-width:900px) {  
+
+.menu{
+    padding: 13% 1% ;
+}
+
+    
+}
+@media screen and (max-width:380px) {  
+}
+.menu{
+    padding: 20% 1%;
+}
+/* ---About Feane--- */
+
+.about{
+    background-color:var(--hoverColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px 20px;
+}
+
+.about .img{
+    width: 370px;
+    height: 500px;
+    background-image: url(./about-img.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 30px;
+}
+
+.about .text{
+    color: white;
+    width: 400px;
+    text-align: center;
+}
+
+.about .text h4{
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.about .text p{
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.about .text button{
+    background-color: var(--buttonsColor);
+    color:var(--whiteColor);
+    border: none;
+    padding: 5px 30px;
+    font-size: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+.about .text button:hover{
+    color: var(--whiteColor);
+    scale: 1.1;
+}
+
+/* ---About Feane Responsive--- */
+
+@media screen and (max-width:980px) {
+ 
+.about{
+
+    height: 100vh;
+}
+.about .img{
+        width: 300px;
+        height: 450px;
+        margin: 10px ;
+}
+.about .text{
+       width: 65%;
+        max-width: 350px;
+        font-size: 11px;
+}
+.about .text h4{
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.about .text p{
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+}
+@media screen and (max-width:700px) {
+    
+.about .img{
+        width: 260px;
+        height: 400px;
+        margin: 30px 20px;
+}
+.about .text{
+        max-width: 280px;
+}
+.about .text h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.about .text button{
+    padding: 5px 20px;
+}
+}
+@media screen and (max-width:380px) {
+
+.about .img{
+        width: 280px;
+        height: 300px;
+        margin: 40px;
+}
+.about .text{
+        max-width: 280px;
+}
+.about .text h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.about .text button{
+    padding: 5px 18px;
+    margin-bottom: 30px;
+}
+}
+/* ---Book Table--- */
+
+.booking{
+    width: 100%;
+}
+.booking .bookTable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.booking .book h1{
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    padding:  10% 0 16px 14%;
+}
+.booking .bookTable .data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+.booking .bookTable .data input {
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px var(--secondColor) solid;
+    font-size: 10px;
+}
+.bookTable .data .option{
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px var(--secondColor) solid;
+    font-size: 10px;
+}
+.booking .bookTable .data button{
+    background-color: var(--buttonsColor);
+    color: var(--whiteColor);
+    border: none;
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 10px ;
+}
+.booking .bookTable .map{
+     width: 450px;
+    
+}
+.booking .bookTable .map iframe{
+    border-radius: 10px;
+    height: 300px;
+}
+
+/* ---BookTable Responsive--- */
+
+@media screen and (max-width:990px) {
+    .booking{
+    width: 100%;
+}
+.booking .bookTable {
+    gap: 50px;
+}
+.booking .book h1{
+    padding:  10% 0 20px 5%;
+}
+.booking .bookTable .data{
+    width: 35%;
+}
+.booking .bookTable .data button{
+    padding: 5px 20px;   
+}
+.booking .bookTable .map{
+     width: 400px;  
+}
+.booking .bookTable .map iframe{
+    border-radius: 10px;
+    height: 300px;
+}   
+}
+@media screen and (max-width:785px) {
+    
+.booking .bookTable {
+
+    gap: 15px;
+}
+.booking .book h1{
+    font-size: 30px;
+    padding:  15% 10px 20px 25%;
+}
+.booking .bookTable .data{
+    width: 60%;
+}
+.booking .bookTable .data button{
+    background-color: var(--buttonsColor);
+    color: var(--whiteColor);
+    border: none;
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px 15px ;
+
+}
+.booking .bookTable .map{
+     width: 400px;
+    
+}
+.booking .bookTable .map iframe{
+    border-radius: 10px;
+    height: 400px;
+    width: 420px;
+}    
+}
+
+@media screen and (max-width:480px) {
+    .booking{
+    width: 100%;
+}
+.booking .bookTable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.booking .book h1{
+    font-size: 30px;
+    padding:  20% 20px 10px 17%;
+}
+.booking .bookTable .data{
+    width: 70%;
+}
+.booking .bookTable .data button{
+    background-color: var(--buttonsColor);
+    color: var(--whiteColor);
+    border: none;
+    padding: 7px 25px;
+    border-radius: 25px;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 5px 10px ;
+
+}
+.booking .bookTable .map{
+     width: 300px;
+    
+}
+.booking .bookTable .map iframe{
+    border-radius: 10px;
+    height: 250px;
+    width: 300px;
+}
+    
+}
+
+/* Customers Review  */
+
+.carousel-item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.carousel-item:not(.active) {
+    display: none !important;
+}
+.customers{
+    width: 100%;
+    padding: 80px 10% 40px 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.customers h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    padding:0 20% 25px;
+}
+.customers .review{
+    width: 380px;
+    height: 170px;
+    background-color: var(--mainColor);
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+.customers .review .img1{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px var(--buttonsColor) solid;
+    background-image: url(./client1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 10px;
+    right: 165px;
+}
+.customers .review .img2{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px var(--buttonsColor) solid;
+    background-image: url(./client2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 10px;
+    right: 165px;
+}
+.customers .review .text{
+    color: white;
+    font-size: 11px;
+    text-align: center; 
+    padding: 5px; 
+    transition: all 2s ease-in-out; 
+}
+.customers .review .text:hover{
+    color:var(--buttonsColor);
+}
+.customers .review .text h5{
+    font-size: 13px;
+    font-weight: bold;
+}
+.customers .review .text h6{
+    font-size: 10px;
+    color: grey;
+}
+
+/* ---Customer review Responsive--- */
+@media screen and (max-width:990px) {
+    .carousel-item {
+    flex-wrap: nowrap;
+}
+
+.customers .review{
+    width: 350px;
+}    
+}
+@media screen and (max-width:780px) {
+    .carousel-item {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.customers .review{
+    width: 350px;
+}    
+}
+
+/* ---Footer--- */
+
+.footer{
+    width: 100%;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1% 0 3% 0;
+
+}
+.footer .contactus{
+    width: 25%;
+    text-align: center;
+}
+.footer .contactus h6{
+    font-style: italic;
+    font-size: 14px;
+    font-family:'Dancing Script', cursive;
+}
+
+.footer .contactus p{
+    font-family:'Dancing Script', cursive;
+    color: var(--secondColor);
+    margin: 3px;
+    font-size: 11px;
+}
+.footer .feane {
+    width: 25%;
+    text-align: center;
+    margin-top: 20px;
+
+
+}
+.footer .feane h6{
+    font-family:'Dancing Script', cursive;
+    font-size: 14px;
+    font-style: italic;
+
+
+}
+.footer .feane p{
+    font-size: 11px;
+    font-family:'Dancing Script', cursive;
+    color: var(--secondColor);
+}
+
+.footer .feane .icons{
+    width: 300px;
+    font-size: 13px;
+    font-family:'Dancing Script', cursive;
+    text-align: center;  
+    color: var(--whiteColor);
+    margin-bottom: 10px;
+}
+.footer .opening{
+    width: 25%;
+    font-family:'Dancing Script', cursive;
+    text-align: center;
+
+
+}  
+.footer .opening h6{
+    font-style: italic;
+    font-family:'Dancing Script', cursive;
+    font-size: 14px;
+    margin-bottom: 17px;
+
+}
+.footer .opening p{
+    font-family:'Dancing Script', cursive;
+    font-size: 10px;
+    color: var(--secondColor);
+    margin-bottom: 12px;
+}
+.footer  hr{
+    width: 70%;
+    border-top: 1px solid gray;
+    margin-bottom: 6px;
+}
+.footer .rights{
+    width:100%;
+    font-size: 10px;
+    font-family:'Dancing Script', cursive;
+    text-align: center;
+}
+.footer .rights p{
+    font-size: 9px;
+    font-family:'Dancing Script', cursive;
+    color: var(--secondColor);
+    margin: 4px;
+}
+
+/* ---Footer Responsive--- */
+
+@media screen and (max-width:990px) {
+.footer .feane .icons{
+    width: 230px;
+}
+}
+@media screen and (max-width:780px) {
+.footer .feane .icons{
+    width: 180px;
+}
+
+}
