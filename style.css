@@ -375,17 +375,14 @@ animation: fadeSlide 5s infinite;
 /* Menu */
 .menu{
     width: 100%;
-    padding: 9% 10% !important;
+    padding: 7% 10% !important;
 }
 .menu h5{
     font-size: 22px;
     font-family: 'Dancing Script', cursive;
     text-align: center;
     margin-bottom: 25px;
-        margin-top: 10px;
-
 }
-
 .menu .menu-cards{
     display: flex;
     flex-wrap: wrap;
@@ -395,28 +392,27 @@ animation: fadeSlide 5s infinite;
 }
 .menu .menu-cards .menu-card{
     background-color: var(--hoverColor);
-    width: 270px;
+    width: 260px;
+    height: 430;
     border-radius: 10px ;
     color: var(--whiteColor);
     border: none;
     position: relative;
-    transition: all 2s;
+    transition: all 1s;
 
     }
-    .menu .menu-cards .menu-card:hover{
+.menu .menu-cards .menu-card:hover{
     box-shadow: 3px 3px 10px gray, -3px -3px 10px gray;
-        transform: translateY(-8px) scale(1.01);
-
+        transform: translateY(-5px) scale(1.01);
     }
-
 .menu .menu-cards .menu-card .img1{
     background-image: url(./f1.png);
     background-position: center;
-    background-size:180px;
+    background-size:140px;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 .menu .menu-cards .menu-card .img2{
@@ -426,67 +422,67 @@ animation: fadeSlide 5s infinite;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 .menu .menu-cards .menu-card .img3{
     background-image: url(./f3.png);
     background-position: center;
-    background-size: 150px;
+    background-size: 140px;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 .menu .menu-cards .menu-card .img4{
     background-image: url(./f4.png);
     background-position: center;
-    background-size: 160px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 .menu .menu-cards .menu-card .img5{
     background-image: url(./f5.png);
     background-position: center;
-    background-size: 160px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 .menu .menu-cards .menu-card .img6{
     background-image: url(./f6.png);
     background-position: center;
-    background-size: 160px;
+    background-size: 140px;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 .menu .menu-cards .menu-card .img7{
     background-image: url(./f7.png);
     background-position: center;
-    background-size: 160px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 .menu .menu-cards .menu-card .img8{
     background-image: url(./f8.png);
     background-position: center;
-    background-size: 160px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 .menu .menu-cards .menu-card .img9{
@@ -496,16 +492,26 @@ animation: fadeSlide 5s infinite;
     background-repeat: no-repeat;
     background-color:var(--secondColor);
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
 
 .menu .menu-cards .menu-card .text{
     font-size: 10px;
-    margin: 20px;
-    padding: 10px;
-
+    margin: 10px 25px 10px 10px;
+    padding: 5px;
 }
+.menu .menu-cards .menu-card .text h3{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.menu .menu-cards .menu-card .text .price{
+    font-size:10px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
 .menu .menu-cards .menu-card .icon #icon{
     width: 30px;
     height: 30px; 
@@ -519,28 +525,23 @@ animation: fadeSlide 5s infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 2s;
+    transition: all 1s;
 
 }
 .menu .menu-cards .menu-card .icon #icon:hover{
-    scale: 1.1;
+    scale: 1.05;
 }
-
-
 /* ---Menu Responsive--- */
 
-@media screen and (max-width:900px) {  
-
-.menu{
-    padding: 13% 1% ;
-}
-
-    
+@media screen and (max-width:990px) {  
+.menu h5{
+    margin-top: 40px;
+}   
 }
 @media screen and (max-width:380px) {  
-}
-.menu{
-    padding: 20% 1%;
+.menu h5{
+    margin-top: 60px;
+}  
 }
 /* ---About Feane--- */
 
@@ -600,15 +601,14 @@ animation: fadeSlide 5s infinite;
 /* ---About Feane Responsive--- */
 
 @media screen and (max-width:980px) {
- 
-.about{
-
+ .about{
     height: 100vh;
 }
 .about .img{
         width: 300px;
         height: 450px;
-        margin: 10px ;
+
+
 }
 .about .text{
        width: 65%;
@@ -624,40 +624,47 @@ animation: fadeSlide 5s infinite;
     margin-bottom: 15px;
 }
 }
-@media screen and (max-width:700px) {
-    
-.about .img{
-        width: 260px;
-        height: 400px;
-        margin: 30px 20px;
-}
-.about .text{
-        max-width: 280px;
-}
-.about .text h4{
-    font-size: 20px;
-    margin-bottom: 25px;
-}
-.about .text button{
-    padding: 5px 20px;
-}
-}
-@media screen and (max-width:380px) {
+@media screen and (max-width:760px) {
 
 .about .img{
-        width: 280px;
-        height: 300px;
-        margin: 40px;
+      width: 250px;
+      height: 370px;
+      margin: 10px ;
 }
 .about .text{
+       width: 50%;
         max-width: 280px;
+        font-size: 9px;
 }
 .about .text h4{
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.about .text p{
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+}
+@media screen and (max-width:600px) {
+
+.about .img{
+        width: 270px;
+        height: 230px;
+        margin: 30px;
+}
+.about .text{
+        width: 360px;
+}
+.about .text h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.about .text p{
+    font-size: 9px;
+    margin-bottom: 15px;
 }
 .about .text button{
-    padding: 5px 18px;
+    padding: 5px 15px;
     margin-bottom: 30px;
 }
 }
@@ -717,109 +724,109 @@ animation: fadeSlide 5s infinite;
 }
 .booking .bookTable .map iframe{
     border-radius: 10px;
+    width: 450px;
     height: 300px;
 }
 
 /* ---BookTable Responsive--- */
 
-@media screen and (max-width:990px) {
-    .booking{
-    width: 100%;
-}
+@media screen and (max-width:1200px) {
+
 .booking .bookTable {
-    gap: 50px;
+    gap: 90px;
 }
 .booking .book h1{
-    padding:  10% 0 20px 5%;
+    font-size: 28px;
+    padding:  15% 20px 10px 13%;
+}
+}
+@media screen and (max-width:990px) {
+
+.booking .bookTable {
+    gap: 60px;
+}
+.booking .book h1{
+    font-size: 28px;
+    padding:  15% 20px 10px 10%;
 }
 .booking .bookTable .data{
     width: 35%;
 }
-.booking .bookTable .data button{
-    padding: 5px 20px;   
+.booking .bookTable .data input {
+    height: 30px;
 }
+.bookTable .data .option{
+    height: 30px;
+    padding: 5px;
+}
+.booking .bookTable .data button{
+    padding: 7px 20px;
+    font-size: 10px;
+    margin: 5px 10px ;
+}
+
 .booking .bookTable .map{
-     width: 400px;  
+     width: 400px; 
+     margin-top: 5px; 
 }
 .booking .bookTable .map iframe{
-    border-radius: 10px;
-    height: 300px;
-}   
+    height: 250px;
+    width: 400px;}    
 }
-@media screen and (max-width:785px) {
-    
+@media screen and (max-width:700px) {
 .booking .bookTable {
-
-    gap: 15px;
+    gap: 10px;
 }
 .booking .book h1{
     font-size: 30px;
-    padding:  15% 10px 20px 25%;
-}
-.booking .bookTable .data{
-    width: 60%;
-}
-.booking .bookTable .data button{
-    background-color: var(--buttonsColor);
-    color: var(--whiteColor);
-    border: none;
-    padding: 5px 25px;
-    border-radius: 25px;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 20px 15px ;
-
-}
-.booking .bookTable .map{
-     width: 400px;
-    
-}
-.booking .bookTable .map iframe{
-    border-radius: 10px;
-    height: 400px;
-    width: 420px;
-}    
-}
-
-@media screen and (max-width:480px) {
-    .booking{
-    width: 100%;
-}
-.booking .bookTable {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-.booking .book h1{
-    font-size: 30px;
-    padding:  20% 20px 10px 17%;
+    padding:  15% 20px 5px 17%;
 }
 .booking .bookTable .data{
     width: 70%;
 }
 .booking .bookTable .data button{
-    background-color: var(--buttonsColor);
-    color: var(--whiteColor);
-    border: none;
     padding: 7px 25px;
-    border-radius: 25px;
     font-size: 11px;
-    font-weight: bold;
-    margin: 5px 10px ;
-
+    margin:10px ;
 }
 .booking .bookTable .map{
-     width: 300px;
-    
+     width: 420px; 
+     margin-top: 5px; 
 }
 .booking .bookTable .map iframe{
-    border-radius: 10px;
-    height: 250px;
-    width: 300px;
+    height: 270px;
+    width: 420px;}    
 }
-    
+@media screen and (max-width:480px) {
+    .booking{
+    width: 100%;
+}
+.booking .book h1{
+    font-size: 28px;
+    padding:  25% 20px 5px 17%;
+}
+.booking .bookTable .data{
+    width: 70%;
+}
+.booking .bookTable .data input {
+    height: 30px;
+}
+.bookTable .data .option{
+    height: 30px;
+    padding: 5px;
+}
+.booking .bookTable .data button{
+    padding: 7px 20px;
+    font-size: 10px;
+    margin: 5px 10px ;
+}
+.booking .bookTable .map{
+     width: 300px;  
+}
+.booking .bookTable .map iframe{
+    height: 230px;
+    width: 300px;
+}    
 }
 
 /* Customers Review  */
@@ -916,8 +923,35 @@ animation: fadeSlide 5s infinite;
 }
 
 .customers .review{
-    width: 350px;
-}    
+    width: 320px;
+} 
+.customers .review .img1{
+    bottom: 15px;
+    right: 125px;
+}  
+.customers .review .img2{
+    bottom: 15px;
+    right: 125px;
+} 
+  
+}
+@media screen and (max-width:380px) {
+    .carousel-item {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.customers .review{
+    width: 300px;
+} 
+.customers .review .img1{
+    bottom: 5px;
+    right: 125px;
+}  
+.customers .review .img2{
+    bottom: 5px;   
+    right: 125px;
+} 
 }
 
 /* ---Footer--- */
@@ -942,7 +976,6 @@ animation: fadeSlide 5s infinite;
     font-size: 14px;
     font-family:'Dancing Script', cursive;
 }
-
 .footer .contactus p{
     font-family:'Dancing Script', cursive;
     color: var(--secondColor);
@@ -952,27 +985,21 @@ animation: fadeSlide 5s infinite;
 .footer .feane {
     width: 25%;
     text-align: center;
-    margin-top: 20px;
-
-
+    margin-top: 23px;
 }
 .footer .feane h6{
     font-family:'Dancing Script', cursive;
     font-size: 14px;
     font-style: italic;
-
-
 }
 .footer .feane p{
     font-size: 11px;
     font-family:'Dancing Script', cursive;
     color: var(--secondColor);
 }
-
 .footer .feane .icons{
     width: 300px;
     font-size: 13px;
-    font-family:'Dancing Script', cursive;
     text-align: center;  
     color: var(--whiteColor);
     margin-bottom: 10px;
@@ -981,21 +1008,19 @@ animation: fadeSlide 5s infinite;
     width: 25%;
     font-family:'Dancing Script', cursive;
     text-align: center;
-
-
 }  
 .footer .opening h6{
     font-style: italic;
     font-family:'Dancing Script', cursive;
     font-size: 14px;
-    margin-bottom: 17px;
-
+    margin-bottom: 15px;
 }
 .footer .opening p{
     font-family:'Dancing Script', cursive;
     font-size: 10px;
     color: var(--secondColor);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    line-height: 1.1;
 }
 .footer  hr{
     width: 70%;
@@ -1018,13 +1043,31 @@ animation: fadeSlide 5s infinite;
 /* ---Footer Responsive--- */
 
 @media screen and (max-width:990px) {
-.footer .feane .icons{
-    width: 230px;
+.footer{
+    justify-content: space-around;
+    padding: 1% 0 3% 0;
+}
+.footer .contactus{
+    text-align: start;
+}
+.footer .feane {
+    width: 25%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+    .footer .feane .icons{
+    width: 250px;
 }
 }
 @media screen and (max-width:780px) {
 .footer .feane .icons{
-    width: 180px;
+    width: 130px;
 }
 
+}
+@media screen and (max-width:380px) {
+.footer .feane .icons{
+    width: 100px;
+}
 }
