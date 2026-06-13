@@ -73,10 +73,10 @@ nav #navbarNav button{
     margin: 5px 0 0 8px;
     transition: all 0.3s;
 }
+
 /* ---NavBAr Responsive--- */
 
 @media screen and (max-width: 768px) {
-
     nav {
         justify-content: space-around;
         align-items: flex-start;
@@ -138,19 +138,19 @@ nav #navbarNav button{
     margin-bottom: 15px;
     word-spacing: 2px;
     line-height: 1.6;
-
 }
 .slide button{
-    font-size: 13px;
+    font-size: 11px;
     padding: 5px 10px;
     border: none;
     border-radius: 25px;
     background: var(--buttonsColor);
-    color: var(--whiteColor);
+    color: var(--blackColor);
     cursor: pointer;
 }
 
 /* ---Head Responsive--- */
+
 @media screen and (max-width: 790px) {
     .head{
     padding: 0 25px;
@@ -208,7 +208,6 @@ nav #navbarNav button{
     gap: 50px;
     flex-wrap: nowrap;
 }
-
 .offers .card{
     width: 380px;
     height: 170px;
@@ -216,35 +215,31 @@ nav #navbarNav button{
     border-radius: 5px;
     padding: 20px;
     position: relative;
-    transition: all 2s;
+    transition: all .5s ease;
     animation: colors 4s infinite;
     animation-play-state: paused;
-
-
 }
 .offers .card:hover{
     animation-play-state: running;
     animation-timing-function: ease-in-out;
 }
-
 @keyframes colors {
     0% {
         background-color: var(--mainColor);
     }
     25% {
-        background-color: #373A40;
+        background-color: #393E46;
     }
     50% {
-        background-color: #686D76;
+        background-color: #948979;
     }
     75% {
-        background-color: #44444E;
+        background-color: #DFD0B8;
     }
     100% {
         background-color: var(--mainColor);
     }
 }
-
 .offers .card .img1{
     width: 130px;
     height: 130px;
@@ -258,7 +253,6 @@ nav #navbarNav button{
     background-size: contain;
 animation: fadeSlide 5s infinite;
 }
-
 @keyframes fadeSlide {
   from {
     transform: translateX(30px);
@@ -279,9 +273,7 @@ animation: fadeSlide 5s infinite;
     background-image: url(./o2.jpg);
     background-size: contain;
     animation: fadeSlide 5s infinite;
-
 }
-
 .offers .text{
     margin-left: 160px;
     margin-top: 10px;
@@ -296,18 +288,15 @@ animation: fadeSlide 5s infinite;
     margin-bottom: 10px;
     font-family: 'Dancing Script', cursive;
 }
-
 .offers .text h2{
     color: white;
     font-size: 25px;
     margin-bottom: 15px;
     font-family: 'Dancing Script', cursive;
 }
-
 .offers .text span{
     font-size: 13px;
 }
-
 .offers .text button{
     border: none;
     font-size: 12px;
@@ -318,15 +307,14 @@ animation: fadeSlide 5s infinite;
 }
 
 /* ---Offers Responsive--- */
+
 @media screen and (max-width:900px) {
-    
 .offers{
     gap: 20px;
     flex-wrap:wrap;
 }   
 }
-@media screen and (max-width:380px) {
-    
+@media screen and (max-width:380px) {   
 .offers{
     gap: 10px;
     flex-wrap:wrap;
@@ -337,29 +325,24 @@ animation: fadeSlide 5s infinite;
     margin-bottom: 10px;
     font-family: 'Dancing Script', cursive;
 }
-
 .offers .text h2{
     color: white;
     font-size: 17px;
     margin-bottom: 9px;
     font-family: 'Dancing Script', cursive;
 }
-
 .offers .text span{
     font-size: 13px;
 }
-
 .offers .text button{
     border: none;
     font-size: 10px;
     padding: 5px 7px;
-
 }
 .offers .card .img1{
     width: 120px;
     height: 120px;
     top: 20px;
-
 }
 .offers .card .img2{
     width: 120px;
@@ -372,7 +355,8 @@ animation: fadeSlide 5s infinite;
 }
 
 
-/* Menu */
+/* ---Menu--- */
+
 .menu{
     width: 100%;
     padding: 7% 10% !important;
@@ -393,17 +377,15 @@ animation: fadeSlide 5s infinite;
 .menu .menu-cards .menu-card{
     background-color: var(--hoverColor);
     width: 260px;
-    height: 430;
     border-radius: 10px ;
     color: var(--whiteColor);
     border: none;
     position: relative;
     transition: all 1s;
-
-    }
+}
 .menu .menu-cards .menu-card:hover{
     box-shadow: 3px 3px 10px gray, -3px -3px 10px gray;
-        transform: translateY(-5px) scale(1.01);
+    transform: translateY(-5px) scale(1.01);
     }
 .menu .menu-cards .menu-card .img1{
     background-image: url(./f1.png);
@@ -495,7 +477,6 @@ animation: fadeSlide 5s infinite;
     height: 200px;
     border-radius: 10px 10px 0 30px ;
 }
-
 .menu .menu-cards .menu-card .text{
     font-size: 10px;
     margin: 10px 25px 10px 10px;
@@ -505,13 +486,16 @@ animation: fadeSlide 5s infinite;
     font-size: 22px;
     margin-bottom: 5px;
 }
+.menu .menu-cards .menu-card .text p {
+       line-height: 1.6;
+       margin-bottom: 10px;
+   }
 .menu .menu-cards .menu-card .text .price{
     font-size:10px;
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 30px;
 }
-
 .menu .menu-cards .menu-card .icon #icon{
     width: 30px;
     height: 30px; 
@@ -526,11 +510,11 @@ animation: fadeSlide 5s infinite;
     justify-content: center;
     align-items: center;
     transition: all 1s;
-
 }
 .menu .menu-cards .menu-card .icon #icon:hover{
     scale: 1.05;
 }
+
 /* ---Menu Responsive--- */
 
 @media screen and (max-width:990px) {  
@@ -543,6 +527,7 @@ animation: fadeSlide 5s infinite;
     margin-top: 60px;
 }  
 }
+
 /* ---About Feane--- */
 
 .about{
@@ -554,7 +539,6 @@ animation: fadeSlide 5s infinite;
     gap: 10px;
     padding: 30px 20px;
 }
-
 .about .img{
     width: 370px;
     height: 500px;
@@ -570,7 +554,6 @@ animation: fadeSlide 5s infinite;
     width: 400px;
     text-align: center;
 }
-
 .about .text h4{
     font-size: 21px;
     font-weight: bold;
@@ -581,7 +564,6 @@ animation: fadeSlide 5s infinite;
     font-size: 10px;
     text-align: center;
     margin-bottom: 8px;
-
 }
 .about .text button{
     background-color: var(--buttonsColor);
@@ -591,11 +573,11 @@ animation: fadeSlide 5s infinite;
     font-size: 10px;
     border-radius: 25px;
     cursor: pointer;
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 .about .text button:hover{
-    color: var(--whiteColor);
-    scale: 1.1;
+    color: var(--mainColor);
+    scale: 1.05;
 }
 
 /* ---About Feane Responsive--- */
@@ -605,15 +587,13 @@ animation: fadeSlide 5s infinite;
     height: 100vh;
 }
 .about .img{
-        width: 300px;
-        height: 450px;
-
-
+    width: 300px;
+    height: 450px;
 }
 .about .text{
-       width: 65%;
-        max-width: 350px;
-        font-size: 11px;
+    width: 65%;
+    max-width: 350px;
+    font-size: 11px;
 }
 .about .text h4{
     font-size: 22px;
@@ -625,16 +605,15 @@ animation: fadeSlide 5s infinite;
 }
 }
 @media screen and (max-width:760px) {
-
 .about .img{
-      width: 250px;
-      height: 370px;
-      margin: 10px ;
+    width: 250px;
+    height: 370px;
+    margin: 10px ;
 }
 .about .text{
-       width: 50%;
-        max-width: 280px;
-        font-size: 9px;
+    width: 50%;
+    max-width: 280px;
+    font-size: 9px;
 }
 .about .text h4{
     font-size: 22px;
@@ -646,14 +625,13 @@ animation: fadeSlide 5s infinite;
 }
 }
 @media screen and (max-width:600px) {
-
 .about .img{
-        width: 270px;
-        height: 230px;
-        margin: 30px;
+    width: 270px;
+    height: 230px;
+    margin: 30px;
 }
 .about .text{
-        width: 360px;
+    width: 360px;
 }
 .about .text h4{
     font-size: 18px;
@@ -668,6 +646,7 @@ animation: fadeSlide 5s infinite;
     margin-bottom: 30px;
 }
 }
+
 /* ---Book Table--- */
 
 .booking{
@@ -715,12 +694,15 @@ animation: fadeSlide 5s infinite;
     padding: 5px 25px;
     border-radius: 25px;
     font-size: 12px;
-    font-weight: bold;
     margin: 5px 10px ;
+    transition: all 1s ease;
+}
+.booking .bookTable .data button:hover{
+    scale: 1.05;
+    color:var(--mainColor);
 }
 .booking .bookTable .map{
-     width: 450px;
-    
+    width: 450px;   
 }
 .booking .bookTable .map iframe{
     border-radius: 10px;
@@ -731,7 +713,6 @@ animation: fadeSlide 5s infinite;
 /* ---BookTable Responsive--- */
 
 @media screen and (max-width:1200px) {
-
 .booking .bookTable {
     gap: 90px;
 }
@@ -741,7 +722,6 @@ animation: fadeSlide 5s infinite;
 }
 }
 @media screen and (max-width:990px) {
-
 .booking .bookTable {
     gap: 60px;
 }
@@ -764,7 +744,6 @@ animation: fadeSlide 5s infinite;
     font-size: 10px;
     margin: 5px 10px ;
 }
-
 .booking .bookTable .map{
      width: 400px; 
      margin-top: 5px; 
@@ -790,12 +769,13 @@ animation: fadeSlide 5s infinite;
     margin:10px ;
 }
 .booking .bookTable .map{
-     width: 420px; 
-     margin-top: 5px; 
+    width: 420px; 
+    margin-top: 5px; 
 }
 .booking .bookTable .map iframe{
     height: 270px;
-    width: 420px;}    
+    width: 420px;
+}    
 }
 @media screen and (max-width:480px) {
     .booking{
@@ -821,7 +801,7 @@ animation: fadeSlide 5s infinite;
     margin: 5px 10px ;
 }
 .booking .bookTable .map{
-     width: 300px;  
+    width: 300px;  
 }
 .booking .bookTable .map iframe{
     height: 230px;
@@ -838,7 +818,6 @@ animation: fadeSlide 5s infinite;
     gap: 10px;
     flex-wrap: wrap;
 }
-
 .carousel-item:not(.active) {
     display: none !important;
 }
@@ -892,10 +871,10 @@ animation: fadeSlide 5s infinite;
     font-size: 11px;
     text-align: center; 
     padding: 5px; 
-    transition: all 2s ease-in-out; 
+    transition: all .5s ease-in-out; 
 }
 .customers .review .text:hover{
-    color:var(--buttonsColor);
+    color:#DFD0B8;
 }
 .customers .review .text h5{
     font-size: 13px;
@@ -907,6 +886,7 @@ animation: fadeSlide 5s infinite;
 }
 
 /* ---Customer review Responsive--- */
+
 @media screen and (max-width:990px) {
     .carousel-item {
     flex-wrap: nowrap;
@@ -921,7 +901,6 @@ animation: fadeSlide 5s infinite;
     flex-wrap: wrap;
     gap: 15px;
 }
-
 .customers .review{
     width: 320px;
 } 
@@ -932,8 +911,7 @@ animation: fadeSlide 5s infinite;
 .customers .review .img2{
     bottom: 15px;
     right: 125px;
-} 
-  
+}  
 }
 @media screen and (max-width:380px) {
     .carousel-item {
@@ -997,7 +975,7 @@ animation: fadeSlide 5s infinite;
     font-family:'Dancing Script', cursive;
     color: var(--secondColor);
 }
-.footer .feane .icons{
+.footer .feane .icons .icon{
     width: 300px;
     font-size: 13px;
     text-align: center;  
@@ -1043,10 +1021,6 @@ animation: fadeSlide 5s infinite;
 /* ---Footer Responsive--- */
 
 @media screen and (max-width:990px) {
-.footer{
-    justify-content: space-around;
-    padding: 1% 0 3% 0;
-}
 .footer .contactus{
     text-align: start;
 }
@@ -1055,16 +1029,18 @@ animation: fadeSlide 5s infinite;
     text-align: center;
     margin-top: 40px;
 }
-
     .footer .feane .icons{
     width: 250px;
 }
 }
 @media screen and (max-width:780px) {
-.footer .feane .icons{
-    width: 130px;
+    .footer{
+    justify-content: space-evenly;
+    padding: 1% 0 3% 0;
 }
-
+.footer .feane .icons{
+    width: 140px;
+}
 }
 @media screen and (max-width:380px) {
 .footer .feane .icons{
