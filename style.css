@@ -536,6 +536,7 @@ animation: fadeSlide 5s infinite;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    height: 100vh;
     gap: 10px;
     padding: 30px 20px;
 }
@@ -976,7 +977,7 @@ animation: fadeSlide 5s infinite;
     color: var(--secondColor);
 }
 .footer .feane .icons .icon{
-    width: 300px;
+    width: 500px;
     font-size: 13px;
     text-align: center;  
     color: var(--whiteColor);
@@ -1030,7 +1031,7 @@ animation: fadeSlide 5s infinite;
     margin-top: 40px;
 }
     .footer .feane .icons{
-    width: 250px;
+    width: 210px;
 }
 }
 @media screen and (max-width:780px) {
@@ -1039,11 +1040,11 @@ animation: fadeSlide 5s infinite;
     padding: 1% 0 3% 0;
 }
 .footer .feane .icons{
-    width: 140px;
+    width: 160px;
 }
 }
-@media screen and (max-width:380px) {
+@media screen and (max-width:570px) {
 .footer .feane .icons{
-    width: 100px;
+    width: 110px;
 }
 }
