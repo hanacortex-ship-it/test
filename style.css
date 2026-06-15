@@ -940,14 +940,13 @@ animation: fadeSlide 5s infinite;
     background-color: var(--mainColor);
     color: var(--whiteColor);
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
     padding: 1% 0 3% 0;
 
 }
 .footer .contactus{
-    width: 25%;
     text-align: center;
 }
 .footer .contactus h6{
@@ -962,9 +961,9 @@ animation: fadeSlide 5s infinite;
     font-size: 11px;
 }
 .footer .feane {
-    width: 25%;
+    width: 23%;
     text-align: center;
-    margin-top: 23px;
+    margin-top: 25px;
 }
 .footer .feane h6{
     font-family:'Dancing Script', cursive;
@@ -975,16 +974,15 @@ animation: fadeSlide 5s infinite;
     font-size: 11px;
     font-family:'Dancing Script', cursive;
     color: var(--secondColor);
+    margin-bottom: 5px;
 }
 .footer .feane .icons .icon{
-    width: 500px;
     font-size: 13px;
     text-align: center;  
     color: var(--whiteColor);
     margin-bottom: 10px;
 }
 .footer .opening{
-    width: 25%;
     font-family:'Dancing Script', cursive;
     text-align: center;
 }  
@@ -1022,29 +1020,75 @@ animation: fadeSlide 5s infinite;
 /* ---Footer Responsive--- */
 
 @media screen and (max-width:990px) {
-.footer .contactus{
-    text-align: start;
-}
-.footer .feane {
-    width: 25%;
-    text-align: center;
-    margin-top: 40px;
-}
-    .footer .feane .icons{
-    width: 210px;
+.footer{
+
+    justify-content:space-evenly;  
 }
 }
 @media screen and (max-width:780px) {
-    .footer{
+.footer{
     justify-content: space-evenly;
-    padding: 1% 0 3% 0;
+    flex-direction: column;
+    padding: 3% 0 3% 0;
+}
+.footer .feane {
+    margin-top: 10px;
+    width: 40%;
 }
 .footer .feane .icons{
-    width: 160px;
+    margin-bottom: 10%;
 }
 }
 @media screen and (max-width:570px) {
-.footer .feane .icons{
-    width: 110px;
+.footer{
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5% 0 3% 0;
 }
+.footer .feane {
+    margin-top: 10px;
+}
+.footer .feane .icons{
+    margin-bottom: 10%;
+}
+}
+@media screen and (max-width:400px) {
+.footer{
+    padding: 5% 0 2% 0;
+}
+.footer .contactus h6{
+    font-size: 12px;
+}
+.footer .contactus p{
+    margin: 3px;
+    font-size: 10px;
+}
+.footer .feane {
+    margin-top: 10px;
+}
+.footer .feane h6{
+    font-size: 12px;
+}
+.footer .feane p{
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+.footer .feane .icons .icon{
+    font-size: 9px;
+}
+.footer .opening h6{
+    font-style: italic;
+    font-family:'Dancing Script', cursive;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+.footer .opening p{
+    font-size: 9px;
+}
+
+.footer .rights p{
+    font-size: 7px;
+    margin: 4px;
+}
+
 }
