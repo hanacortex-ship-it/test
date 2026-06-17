@@ -164,14 +164,8 @@ nav #navbarNav button{
     line-height: 1.1;
 }
 .slide p{
-    font-size: 10px;
-    margin-bottom: 15px;
-    word-spacing: 2px;
+
     line-height: 1.4;
-}
-.slide button{
-    font-size: 11px;
-    padding: 5px 10px;
 }
 }
 @media (max-width: 480px) {
@@ -187,14 +181,7 @@ nav #navbarNav button{
     line-height: 1.1;
 }
 .slide p{
-    font-size: 10px;
-    margin-bottom: 15px;
-    word-spacing: 2px;
     line-height: 1.4;
-}
-.slide button{
-    font-size: 11px;
-    padding: 5px 10px;
 }
 }
 
@@ -312,7 +299,17 @@ animation: fadeSlide 5s infinite;
 .offers{
     gap: 20px;
     flex-wrap:wrap;
-}   
+} 
+.offers .card .img1{
+    width: 125px;
+    height: 125px;
+    top: 15px;
+}
+.offers .card .img2{
+    width: 125px;
+    height: 125px;
+    top: 15px;
+}  
 }
 @media screen and (max-width:380px) {   
 .offers{
@@ -320,34 +317,27 @@ animation: fadeSlide 5s infinite;
     flex-wrap:wrap;
 }   
 .offers .text h3{
-    color: white;
     font-size: 15px;
     margin-bottom: 10px;
-    font-family: 'Dancing Script', cursive;
 }
 .offers .text h2{
-    color: white;
     font-size: 17px;
     margin-bottom: 9px;
-    font-family: 'Dancing Script', cursive;
 }
-.offers .text span{
-    font-size: 13px;
-}
+
 .offers .text button{
-    border: none;
     font-size: 10px;
     padding: 5px 7px;
 }
 .offers .card .img1{
-    width: 120px;
-    height: 120px;
-    top: 20px;
+    width: 110px;
+    height: 110px;
+    top: 25px;
 }
 .offers .card .img2{
-    width: 120px;
-    height: 120px;
-    top: 20px;
+    width: 110px;
+    height: 110px;
+    top: 25px;
 }
 .offers .text{
     margin-left: 140px;
@@ -751,7 +741,8 @@ animation: fadeSlide 5s infinite;
 }
 .booking .bookTable .map iframe{
     height: 250px;
-    width: 400px;}    
+    width: 400px;
+}    
 }
 @media screen and (max-width:700px) {
 .booking .bookTable {
@@ -892,7 +883,6 @@ animation: fadeSlide 5s infinite;
     .carousel-item {
     flex-wrap: nowrap;
 }
-
 .customers .review{
     width: 350px;
 }    
@@ -915,11 +905,10 @@ animation: fadeSlide 5s infinite;
 }  
 }
 @media screen and (max-width:380px) {
-    .carousel-item {
+.carousel-item {
     flex-wrap: wrap;
     gap: 15px;
 }
-
 .customers .review{
     width: 300px;
 } 
@@ -1021,7 +1010,6 @@ animation: fadeSlide 5s infinite;
 
 @media screen and (max-width:990px) {
 .footer{
-
     justify-content:space-evenly;  
 }
 }
@@ -1085,10 +1073,8 @@ animation: fadeSlide 5s infinite;
 .footer .opening p{
     font-size: 9px;
 }
-
 .footer .rights p{
     font-size: 7px;
     margin: 4px;
 }
-
 }
